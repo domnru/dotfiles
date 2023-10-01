@@ -1,0 +1,239 @@
+* {
+    border: none;
+    border-radius: 0px;
+    /*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/
+    font-family: Iosevka, FontAwesome, Noto Sans CJK;
+    font-size: 14px;
+    font-style: normal;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(255, 255, 255, 0);
+    color: #ffffff
+}
+
+#workspaces {
+    /*background: #282828;*/
+    margin: 5px 5px 5px 5px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 16px;
+    border: solid 0px #f4d9e1;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    border-radius: 16px;
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 16px;
+}
+
+#workspaces button:hover {
+    background-color: #E6B9C6;
+    color: black;
+    border-radius: 16px;
+}
+
+#custom-date,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#custom-randwall,
+#custom-launcher {
+    padding: 5px 5px 5px 5px;
+}
+
+#custom-date {
+    color: #D3869B;
+}
+
+#custom-power {
+    color: #24283b;
+    background-color: #db4b4b;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    padding: 5px 10px;
+}
+
+#tray {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 11px 0px 9px;
+    font-weight: bold;
+}
+
+#clock {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 11px 0px 9px;
+    font-weight: bold;
+}
+
+
+#battery {
+    color: #9ece6a;
+}
+
+#battery.charging {
+    color: #9ece6a;
+}
+
+#battery.warning:not(.charging) {
+    background-color: #f7768e;
+    color: #24283b;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#backlight {
+    background-color: #24283b;
+    color: #db4b4b;
+    border-radius: 0px 0px 0px 0px;
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px 0px;
+}
+
+#network {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 11px 0px 9px;
+    font-weight: bold;
+}
+
+#pulseaudio {
+    border-radius: 15px;
+    background-color: #181818;
+    color: #ffffff;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 11px 0px 9px;
+    font-weight: bold;
+}
+
+#pulseaudio.muted {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 11px 0px 9px;
+    font-weight: bold;
+    background-color: orange;
+    color: black;
+}
+
+#custom-randwall {
+    color: #f4d9e1;
+    border-radius: 8px;
+    margin-right: 0px;
+}
+
+#custom-launcher {
+    color: #178EC9;
+    padding: 0 18px 0 18px;
+    /*border-right: solid 1px #282738;*/
+    font-size: 20px;
+}
+
+#custom-activewindow {
+    color: #ffffff;
+    padding: 0 18px 0 18px;
+    /*border-right: solid 1px #282738;*/
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#custom-launcher button:hover {
+    background-color: #FB4934;
+    color: transparent;
+    border-radius: 8px;
+    margin-right: -5px;
+    margin-left: 10px;
+}
+
+#custom-playerctl {
+    background: #181818;
+    padding-left: 15px;
+    padding-right: 14px;
+    border-radius: 16px;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
+#custom-playerlabel {
+    padding-left: 10px;
+    padding-right: 15px;
+    border-radius: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#cpu {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+}
+
+#memory {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+}
+
+#disk {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+}
+
+#custom-hyprpicker {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 11px 0px 9px;
+    font-weight: bold;
+}
+
+#custom-screenshot {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 11px 0px 9px;
+    font-weight: bold;
+}
+
+#custom-quicksettings {
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 11px 0px 9px;
+    font-weight: bold;
+}

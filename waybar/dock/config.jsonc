@@ -1,0 +1,24 @@
+{
+    "position": "bottom",
+    "layer": "top",
+    "height": 64,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "modules-left": [
+    ],
+    "modules-center": [
+        "wlr/taskbar"
+    ],
+    "modules-right": [
+    ],
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 32,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-right": "close",
+        "on-drag" : "close"
+   },
+}
